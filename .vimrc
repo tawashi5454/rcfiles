@@ -182,30 +182,30 @@ imap <Nul> <C-X><C-O>
 "done!
 
 "### MiniBufExplorer ###
-"let g:miniBufExplMapWindowNavVim=1 "hjklで移動
-"let g:miniBufExplSplitBelow=0  " Put new window above
-"let g:miniBufExplMapWindowNavArrows=1
-"let g:miniBufExplMapCTabSwitchBufs=1
-"let g:miniBufExplModSelTarget=1 
-"let g:miniBufExplSplitToEdge=1
+let g:miniBufExplMapWindowNavVim=1 "hjklで移動
+let g:miniBufExplSplitBelow=0  " Put new window above
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1 
+let g:miniBufExplSplitToEdge=1
 
 nmap <Space> :MBEbn<CR>
-"nnoremap ,n       :MBEbn<CR>
-"nnoremap ,p       :MBEbp<CR>
-"nnoremap ,k       :bd<CR>
-"nnoremap ,w       :ls<CR>
-"nnoremap ,1   :e #1<CR>
-"nnoremap ,2   :e #2<CR>
-"nnoremap ,3   :e #3<CR>
-"nnoremap ,4   :e #4<CR>
-"nnoremap ,5   :e #5<CR>
-"nnoremap ,6   :e #6<CR>
-"nnoremap ,7   :e #7<CR>
-"nnoremap ,8   :e #8<CR>
-"nnoremap ,9   :e #9<CR>
+nnoremap ,n       :MBEbn<CR>
+nnoremap ,p       :MBEbp<CR>
+nnoremap ,k       :bd<CR>
+nnoremap ,w       :ls<CR>
+nnoremap ,1   :e #1<CR>
+nnoremap ,2   :e #2<CR>
+nnoremap ,3   :e #3<CR>
+nnoremap ,4   :e #4<CR>
+nnoremap ,5   :e #5<CR>
+nnoremap ,6   :e #6<CR>
+nnoremap ,7   :e #7<CR>
+nnoremap ,8   :e #8<CR>
+nnoremap ,9   :e #9<CR>
 
 "### YankRing ###
-"nmap ,y :YRShow<CR>
+nmap ,y :YRShow<CR>
 
 "### matchit ###
 "done!
@@ -224,8 +224,9 @@ nmap <Space> :MBEbn<CR>
 
 "### snippetsEmu.vim ###
 "done!
+"later
 
 "### NERD_commenter ###
+"later
 
-"### refe ###
 
