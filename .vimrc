@@ -222,11 +222,3 @@ nmap ,y :YRShow<CR>
 "### autoclose.vim ###
 "done!
 
-"### snippetsEmu.vim ###
-"done!
-"later
-
-"### NERD_commenter ###
-"later
-
-
