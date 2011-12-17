@@ -245,10 +245,12 @@ if [ "$TERM" = "screen" ]; then
 fi
 
 # MacVimの設定
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias gvim='env LANG=ja_JP.UTF-8 open -a /Applications/MacVim.app "$@"'
+alias vi='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias gvim='open -a /Applications/MacVim.app "$@"'
 
 # git
 alias gl='git log --pretty=format:"%C(yellow)%h%Creset %Cgreen%ar%Creset %s"'
 
+# Language
+export LANG=ja_JP.UTF-8
