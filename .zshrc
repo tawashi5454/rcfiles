@@ -197,7 +197,9 @@ function history-all { history -E 1 } # 全履歴の一覧を出力する
 alias ruby="ruby -Ku"
 
 preexec () {
-  echo -ne "\ek${1%% *}\e\\"
+  if [ $TERM = "screen" ]; then
+    echo -ne "\ek${1%% *}\e\\"
+  fi
 }
 
 # Screen関係の設定
