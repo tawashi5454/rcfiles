@@ -204,7 +204,9 @@ preexec () {
 
 # Screen関係の設定
 alias sn='screen'
-alias ss='screen -rx'
+alias sl='screen -ls'
+alias sr='screen -r'
+alias sx='screen -x'
 
 if [ "$TERM" = "screen" ]; then
 	chpwd () { echo -n "_`dirs`\\" }
