@@ -213,10 +213,8 @@ let g:miniBufExplModSelTarget=1
 let g:miniBufExplSplitToEdge=1
 
 nmap <Space> :MBEbn<CR>
-nnoremap ,n       :MBEbn<CR>
-nnoremap ,p       :MBEbp<CR>
+nmap <S-Space> :MBEbp<CR>
 nnoremap ,k       :bd<CR>
-nnoremap ,w       :ls<CR>
 nnoremap ,1   :e #1<CR>
 nnoremap ,2   :e #2<CR>
 nnoremap ,3   :e #3<CR>
