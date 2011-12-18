@@ -1,6 +1,32 @@
 
 "********** vim本体の設定 **********
 
+"### プラグインのインストール設定 ###
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'YankRing.vim'
+Bundle 'matchit.zip'
+Bundle 'rails.vim'
+Bundle 'surround.vim'
+Bundle 'AutoComplPop'
+Bundle 'shanlalit/vim-autoclose.git'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
+Bundle 'mattn/zencoding-vim.git'  
+
+filetype plugin indent on
+
+
+"### 色の設定 ###
+set background=light
+colorscheme solarized
+
 "### 基本系 ###
 set nocompatible "viとの互換性を重視しない
 syntax on "シンタックスハイライトを有効にする
@@ -178,9 +204,6 @@ imap <Nul> <C-X><C-O>
 
 "********** プラグイン関係の設定 **********
 
-"### Vim/Ruby ###
-"done!
-
 "### MiniBufExplorer ###
 let g:miniBufExplMapWindowNavVim=1 "hjklで移動
 let g:miniBufExplSplitBelow=0  " Put new window above
@@ -206,25 +229,4 @@ nnoremap ,9   :e #9<CR>
 
 "### YankRing ###
 nmap ,y :YRShow<CR>
-
-"### matchit ###
-"done!
-
-"### rails.vim ###
-"done!
-
-"### surrounds ###
-"done!
-
-"### autocomplpop ###
-"done!
-
-"### autoclose.vim ###
-"done!
-
-"# color
-set background=light
-let g:solarized_italic=0
-let g:solarized_termcolors=256
-colorscheme solarized
 
