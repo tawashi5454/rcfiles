@@ -237,3 +237,8 @@ let $PATH = $PATH . ':/usr/local/bin'
 let g:ref_use_vimproc = 0
 nmap ,rr :<C-u>Ref refe<Space>
 
+"### Zen Coding ###
+let g:user_zen_expandabbr_key = '<c-e>'
+
+
+
