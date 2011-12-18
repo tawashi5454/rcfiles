@@ -248,6 +248,12 @@ if [ "$TERM" = "screen" ]; then
 	chpwd
 fi
 
+# ls
+alias ls='ls -GF'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+
 # MacVimの設定
 alias vi='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
