@@ -222,3 +222,9 @@ nmap ,y :YRShow<CR>
 "### autoclose.vim ###
 "done!
 
+"# color
+set background=light
+let g:solarized_italic=0
+let g:solarized_termcolors=256
+colorscheme solarized
+

@@ -252,5 +252,8 @@ alias gvim='open -a /Applications/MacVim.app "$@"'
 # git
 alias gl='git log --pretty=format:"%C(yellow)%h%Creset %Cgreen%ar%Creset %s"'
 
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
 # Language
 export LANG=ja_JP.UTF-8
