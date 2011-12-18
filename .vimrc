@@ -227,8 +227,13 @@ nnoremap ,8   :e #8<CR>
 nnoremap ,9   :e #9<CR>
 
 "### QuickRun ###
-silent! nmap <unique> rr <Plug>(quickrun)
+silent! nmap <unique> tt <Plug>(quickrun)
 
 "### YankRing ###
 nmap ,y :YRShow<CR>
+
+"### Refe ###
+let $PATH = $PATH . ':/usr/local/bin' 
+let g:ref_use_vimproc = 0
+nmap ,rr :<C-u>Ref refe<Space>
 
