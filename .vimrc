@@ -227,6 +227,9 @@ nnoremap ,7   :e #7<CR>
 nnoremap ,8   :e #8<CR>
 nnoremap ,9   :e #9<CR>
 
+"### QuickRun ###
+silent! nmap <unique> rr <Plug>(quickrun)
+
 "### YankRing ###
 nmap ,y :YRShow<CR>
 
