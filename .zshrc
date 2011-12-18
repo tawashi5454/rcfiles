@@ -22,7 +22,9 @@ PROMPT='[%(!.%{$fg[red]%}root%{$reset_color%}.%n)@%{$fg[red]%}%m%{$reset_color%}
 RPROMPT='[%~]'
 
 # 補完中の候補にも色をつける
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+#zstyle ':completion:*' list-colors $LSCOLORS
+zstyle ':completion:*' list-colors di=34 fi=0
 
 # 補完リストの中を選択可能にする
 zstyle ':completion:*:default' menu select=1
