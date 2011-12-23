@@ -24,8 +24,14 @@ filetype plugin indent on
 
 
 "### 色の設定 ###
+set t_Co=256
 set background=light
-colorscheme solarized
+if !has('gui_running') && $TERM_PROGRAM == 'Apple_Terminal'
+  let g:solarized_termcolors = &t_Co
+  let g:solarized_termtrans = 1
+  colorscheme solarized
+endif
+
 
 "### 基本系 ###
 set nocompatible "viとの互換性を重視しない
@@ -36,8 +42,6 @@ set hidden " バッファが編集中でもその他のファイルを開ける�
 set autoread " 外部のエディタで編集中のファイルが変更されたら自動で読み直す
 set number "行番号を表示させる
 set nobackup "バックアップファイルを作成しない
-set t_Co=16 "256色を使う
-
 
 "### 検索系 ###
 set ignorecase "検索文字列が小文字の場合は大文字小文字を区別なく検索する
@@ -239,6 +243,5 @@ nmap ,rr :<C-u>Ref refe<Space>
 
 "### Zen Coding ###
 let g:user_zen_expandabbr_key = '<c-e>'
-
 
 
