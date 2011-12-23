@@ -13,5 +13,5 @@ defutf8 on
 encoding utf-8
 defencoding utf-8
 defbce "on"
-term xterm-256color
+#term xterm-256color
 

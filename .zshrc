@@ -205,6 +205,7 @@ preexec () {
 }
 
 # Screen関係の設定
+alias screen='/usr/local/Cellar/screen256/4.0.3/bin/screen'
 alias sn='screen'
 alias sl='screen -ls'
 alias sr='screen -r'
