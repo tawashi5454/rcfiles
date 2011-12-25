@@ -268,3 +268,9 @@ alias gl='git log --pretty=format:"%C(yellow)%h%Creset %Cgreen%ar%Creset %s"'
 
 # Language
 export LANG=ja_JP.UTF-8
+
+# Directory Aliases
+alias db='cd ~/Desktop/Dropbox/'
+alias files='cd ~/Desktop/Dropbox/Files/2011/'
+alias repo='cd ~/Desktop/Repository/'
+
